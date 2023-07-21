@@ -29,10 +29,15 @@ body{
     font-weight: bolder;
 }
 
+.dateDiv{
+    display: flex;
+    justify-content: space-around;
+}
 .datePic{
-    width: 102%;
+    width: 90%;
     padding-top: 10px;
     padding-bottom: 10px;
+
 }
 .header{
     display: flex;
@@ -46,7 +51,7 @@ body{
 .headerTitle{
     font-family: cursive;
     margin-bottom: 0;
-    font-size: 65px;
+    font-size: 80px;
     font-weight:bolder;
 }
 iframe{
