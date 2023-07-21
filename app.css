@@ -23,7 +23,7 @@ body{
 
 }
 .regTxt{
-    font-family:monospace;
+    font-family: 'Courier New', Courier, monospace;
     color: black;
     font-size: 30px;
     font-weight: bolder;
