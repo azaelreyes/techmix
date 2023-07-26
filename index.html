@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,16 +9,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app.css">
 
-    <title>Document</title>
+    <link rel="icon" href="media/ellipse.svg" type="image/icon type">
+    <title>Tech Mix</title>
 </head>
+
 <body>
     <div class="header">
         <h1 class="headerTitle">Tech Mix</h1>
-        <p class="headerSub">Connect, Collaborate, Catalyze</p>  
+        <p class="headerSub">Connect, Collaborate, Catalyze</p>
     </div>
 
     <div class="dateDiv">
-       <img class="datePic" src="date.png" alt="July 28th, 2023">
+        <img class="datePic" src="date.png" alt="July 28th, 2023">
     </div>
 
     <div class="regBtnDiv">
@@ -27,27 +30,31 @@
             </div>
         </a>
     </div>
-    
-    
-    
+
+
+
     <div class="mapDiv">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3199.984708263835!2d-121.6565553!3d36.6748687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808df8c18ab518fd%3A0xfbb32e8c14e1f07f!2s210%20Salinas%20St%2C%20Salinas%2C%20CA%2093901!5e0!3m2!1sen!2sus!4v1689918559335!5m2!1sen!2sus" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3199.984708263835!2d-121.6565553!3d36.6748687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808df8c18ab518fd%3A0xfbb32e8c14e1f07f!2s210%20Salinas%20St%2C%20Salinas%2C%20CA%2093901!5e0!3m2!1sen!2sus!4v1689918559335!5m2!1sen!2sus"
+            width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <div class="icons">
         <i class="uil uil-share-alt shareIcon" onclick="copyURLToClipboard()"></i>
-        <a href="https://www.linkedin.com/posts/saul-reyes-morales_networking-latinasintech-womenintech-activity-7085772270673039361-Uz38?utm_source=share&utm_medium=member_desktop">
+        <a
+            href="https://www.linkedin.com/posts/saul-reyes-morales_networking-latinasintech-womenintech-activity-7085772270673039361-Uz38?utm_source=share&utm_medium=member_desktop">
             <i class="uil uil-linkedin"></i>
         </a>
         <a href="mailto:saulreyes42315@gmail.com">
             <i class="uil uil-envelopes"></i>
         </a>
-        
-    </div>
-    
-    
 
-   
+    </div>
+
+
+
+
 
     <div class="custom-alert-overlay" id="customAlertOverlay">
         <div class="custom-alert">
@@ -55,7 +62,7 @@
         </div>
     </div>
 
-<script>
+    <script>
         function copyURLToClipboard() {
             console.log("clicked")
             const urlToCopy = "https://www.coachella.com/";
@@ -65,17 +72,18 @@
             tempInput.setAttribute("value", urlToCopy);
             tempInput.select();
             document.execCommand("copy");
-            document.body.removeChild(tempInput); 
-            
+            document.body.removeChild(tempInput);
+
             // Show the custom alert to notify the user
             const customAlertOverlay = document.getElementById("customAlertOverlay");
             customAlertOverlay.style.display = "flex";
 
             // Hide the custom alert after 2 seconds (optional)
-            setTimeout(function() {
+            setTimeout(function () {
                 customAlertOverlay.style.display = "none";
             }, 1000);
         }
     </script>
 </body>
+
 </html>
