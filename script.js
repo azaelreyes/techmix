@@ -36,7 +36,7 @@ function countdown() {
     const minutesLeft = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
     const secondsLeft = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
-    if (daysLeft <= 0 && hoursLeft <= 0 && minutesLeft <= 0 && secondsLeft <= 0) {
+    if (timeLeft <= 0) {
         document.getElementById("countdownTitle").innerText = "Registration has closed";
         getCountdownParagraph.innerText = "0d 0h 0m 0s";
         document.getElementById("regBtnDiv").style.display = "none";
